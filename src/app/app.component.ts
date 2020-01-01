@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-complete-guide';
+  featureToLoad = 'recipes';
+  title = 'Cooking Application';
+
+
+  enableFeature(loadedFeature: string) {
+    this.featureToLoad = loadedFeature;
+ }
 }
